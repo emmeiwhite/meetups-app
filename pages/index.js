@@ -2,6 +2,7 @@
 // We will call an API and get our Data
 
 import MeetupList from "../components/meetups/MeetupList";
+import Layout from "../components/layout/Layout";
 
 // Let's create a Dummy Meetup Data
 
@@ -49,9 +50,9 @@ const DUMMY_MEETUPS = [
 ];
 function HomePage() {
   return (
-    <main>
+    <Layout>
       <MeetupList meetuplist={DUMMY_MEETUPS} />
-    </main>
+    </Layout>
   );
 }
 
