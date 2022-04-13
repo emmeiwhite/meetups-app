@@ -6,7 +6,7 @@ function MeetupList({ meetuplist }) {
     <section className={classes.meetups_wrapper}>
       {meetuplist.map((meetData) => {
         return (
-          <main>
+          <main key={meetData.id}>
             <MeetupItem {...meetData} />
           </main>
         );
