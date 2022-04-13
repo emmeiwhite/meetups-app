@@ -49,11 +49,7 @@ const DUMMY_MEETUPS = [
   },
 ];
 function HomePage() {
-  return (
-    <Layout>
-      <MeetupList meetuplist={DUMMY_MEETUPS} />
-    </Layout>
-  );
+  return <MeetupList meetuplist={DUMMY_MEETUPS} />;
 }
 
 export default HomePage;
